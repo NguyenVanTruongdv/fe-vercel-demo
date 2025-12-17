@@ -6,7 +6,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("/api/users")
+    fetch("/api/test-db")
       .then(res => res.json())
       .then(data => {
         setUsers(data);
